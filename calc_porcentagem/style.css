@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:300,400,700|PT++Mono');
+:root {
+    --primary-color: rgb(94, 93, 93);
+    --secondary-color: Dimgrey;
+    --terciary-color: gainsboro;
+}
+
+.back {
+    margin-left: 600px;
+    margin-top: -150px;
+    align-items: left;
+    text-align: left;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+
+#container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 5px 5px black;
+    text-align: center;
+    font-size: 25px;
+    padding: auto;
+}
+
+.title {
+    background: var(--terciary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.tipsForm {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.formInput {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 60px;
+    padding: 5px 5px 8px 8px;
+}
+
+.formInput:focus {
+    border: 3px solid var(--primary-color)
+}
+
+.formSelect {
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.formSubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    box-shadow: 1px 2px black;
+}
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}

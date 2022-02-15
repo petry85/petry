@@ -1,0 +1,334 @@
+    /* geral */
+    
+     :root {
+        --primary-color: #0f0d0d;
+    }
+    
+    body,
+    p,
+    h1,
+    h2,
+    input,
+    textarea {
+        margin: 0;
+        font-family: Roboto;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    /* navbar */
+    
+    #navbar {
+        background-color: var(--primary-color);
+        color: #FFF;
+        padding: 0 15px;
+        height: 80px;
+    }
+    
+    #navbar h2,
+    #navbar ul,
+    #navbar-list li,
+    #navbar nav {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    
+    #navbar h2 {
+        margin: 0;
+        line-height: 60px;
+        margin-left: 55px;
+    }
+    
+    #workstation {
+        height: 70px;
+        /*transform: rotate(45deg);*/
+        position: absolute;
+        top: 10px;
+    }
+    
+    #navbar img {
+        height: 40px;
+        /*transform: rotate(45deg);*/
+        top: 10px;
+    }
+    
+    #navbar nav {
+        float: right;
+        vertical-align: middle;
+    }
+    
+    #navbar ul {
+        margin-top: 22px;
+    }
+    
+    #navbar li {
+        margin: 0 10px;
+    }
+    
+    #navbar-list li a {
+        text-decoration: none;
+        color: #FFF;
+    }
+    
+    #navbar-list li a img {
+        border-radius: 10px;
+    }
+    
+    #navbar-list li a:hover {
+        border-bottom: 1px solid #FFF;
+    }
+    /* banner */
+    
+    #main-banner {
+        height: 70vh;
+        background-image: url('../img/argonath.jpg');
+        background-size: cover;
+        padding-top: 15vh;
+    }
+    
+    #banner-info {
+        font-family: 'Permanent Marker';
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        color: #fff;
+        padding: 50px;
+        text-shadow: 2px 2px #0f0d0d;
+    }
+    
+    #banner-info img {
+        height: 120px;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #banner-info p {
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        font-weight: bold;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 15px;
+    }
+    /* about */
+    
+    #about-section {
+        text-align: justify;
+        background-color: var(--primary-color);
+        color: #FFF;
+        padding-top: 50px;
+        height: 450px;
+    }
+    
+    #about-section h2 {
+        text-align: center;
+        line-height: 45px;
+    }
+    
+    #about-section h2 {
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+    
+    #about-section p {
+        max-width: 750px;
+        margin-right: auto;
+        margin-left: auto;
+        line-height: 30px;
+    }
+    
+    #about-section img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 750px;
+        justify-content: center;
+    }
+    /* skills */
+    
+    #skills-section {
+        margin-top: -100px;
+        background-color: #FFF;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+    }
+    
+    #skills-section .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+    }
+    
+    .skills-container {
+        text-align: center;
+        padding: 60px 25px;
+    }
+    
+    .skills-container h3 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    .skills-container img {
+        height: 60px;
+        padding: 15px;
+        margin-bottom: 25px;
+        border-top: 1px solid var(--primary-color);
+        border-left: 1px solid var(--primary-color);
+        border-bottom: 4px solid var(--primary-color);
+        border-right: 4px solid var(--primary-color);
+    }
+    
+    .skills-container .subtitle {
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-top: 50px;
+        margin-bottom: 15px;
+        ;
+    }
+    
+    .skills-container p {
+        line-height: 25px;
+    }
+    /* jobs */
+    
+    #jobs-section {
+        text-align: center;
+        padding-top: 50px;
+        background-color: black;
+        padding-bottom: 25px;
+    }
+    
+    #jobs-section h2 {
+        color: white;
+        margin-bottom: 30px;
+    }
+    
+    #jobs-section p {
+        margin-bottom: 50px;
+        color: white;
+    }
+    
+    #jobs-section a {
+        font-weight: bold;
+        color: white;
+    }
+    
+    .job-container {
+        display: inline-flex;
+        justify-items: space-between;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+    
+    .job-container a img {
+        border-radius: 10px;
+        box-shadow: 2px 2px white;
+        margin: 0 30px;
+    }
+    /* footer */
+    
+    footer {
+        padding: 50px 0;
+        background-color: var(--primary-color);
+        color: #FFF;
+        text-align: center;
+    }
+    /*responsivo celular*/
+    /*html - 18px -> 1rem, 1.2rem -> 18px*/
+    
+    @media(max-width:450px) {
+        /* geral*/
+        p,
+        input,
+        textarea,
+        #navbar-list li a {
+            font-size: 1.2rem;
+            align-items: center;
+        }
+        #navbar h2 {
+            display: none;
+        }
+        #navbar img {
+            top: 9px;
+        }
+        #navbar ul {
+            margin-top: 1.1rem;
+            align-items: center;
+            justify-content: center;
+        }
+        #main-banner {
+            height: 40vh;
+            padding-top: 5hv;
+            padding-bottom: 10vh;
+        }
+        #banner-info {
+            width: 60%;
+        }
+        #banner-info p {
+            margin: 0;
+            width: auto;
+        }
+        /*about*/
+        #about-section {
+            padding: 2rem;
+            height: auto;
+            padding-bottom: 50px;
+        }
+        /*skill*/
+        #skill-section {
+            margin-top: -35px;
+            width: 90%;
+        }
+        #skill-section .container {
+            flex-direction: column;
+        }
+        #skills-container h3,
+        .skills-container .subtitle {
+            font-size: 1.3rem;
+        }
+        #skills-container {
+            padding: 25px;
+        }
+        #skills-container .central {
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        /*jobs*/
+        #job-section h2,
+        #job-section p {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .job-container {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        .job-box {
+            margin-bottom: 2rem;
+            flex: 1 1 300px;
+        }
+        /*footer*/
+        footer {
+            padding: 50px 15px;
+        }
+        footer form {
+            width: 100%;
+        }
+        .detail {
+            margin-top: 10px;
+            display: block;
+        }
+    }
